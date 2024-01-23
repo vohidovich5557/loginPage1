@@ -10,7 +10,6 @@ let saveArray = [];
 let passArray = [];
 
 
-
 const render = () => {
 
     box.innerHTML = saveArray.map((item) => `
@@ -39,16 +38,12 @@ submit.addEventListener('click', (e) => {
 
     }
     e.preventDefault();
-    saveArray.push({ id: Date.now(), usename: username.value });
-    passArray.push({ id: Date.now() + 1, passcode: password.value });
+    saveArray.push({ id: Date.now(), usename: username.value});
+    passArray.push({id:Date.now() + 1, passcode: password.value});
     username.value = " ";
     password.value = " ";
-    let oldUsers = JSON.parse(localStorage.getItem("username"));
-    let newUsers = [saveArray, ... oldUsers];
-    localStorage.setItem("username", JSON.stringify(newUsers));
-    let oldPass = JSON.parse(localStorage.getItem("password"));
-    let newPass = [passArray, ... oldUsers];
-    localStorage.setItem("password", JSON.stringify(newPass));
+    localStorage.setItem("username", JSON.stringify(saveArray));
+    localStorage.setItem("username", JSON.stringify(passArray));
     render();
 });
 
