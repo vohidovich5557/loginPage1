@@ -1,0 +1,63 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./bg_img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.loginpage {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(30%);
+    max-width: 500px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+
+.user_card {
+    margin-bottom: 20px;
+
+}
+
+.pass_card {
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user_btn {
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+    gap: 20px;
+}
+
+.pass_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pass_btn {
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+    gap: 20px;
+}
